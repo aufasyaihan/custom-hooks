@@ -19,7 +19,7 @@ export function useFetch(fetchFn, initialValue) {
     }
 
     fetchData();
-  }, []);
+  }, [fetchFn]);
 
   return {
     fetchedData,
